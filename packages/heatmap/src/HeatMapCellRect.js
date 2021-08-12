@@ -49,7 +49,7 @@ const HeatMapCellRect = ({
     return (
         <animated.g
             transform={animatedProps.transform}
-            style={{ cursor: 'pointer' }}
+            style={onClick ? { cursor: 'pointer' } : undefined}
             onMouseEnter={onHover}
             onMouseMove={onHover}
             onMouseLeave={onLeave}
